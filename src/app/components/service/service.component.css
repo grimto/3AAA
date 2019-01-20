@@ -1,0 +1,7 @@
+.back-service {
+  background-attachment: scroll;
+  background-image: url('../../../assets/img/service.jpg');
+  background-position: center center;
+  background-size: cover;
+  margin-top: 0;
+}

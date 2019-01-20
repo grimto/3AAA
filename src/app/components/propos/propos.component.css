@@ -1,0 +1,7 @@
+.back-propos {
+  background-image: url('../../../assets/img/about-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  margin-top: 0;
+}
