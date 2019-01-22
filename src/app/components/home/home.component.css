@@ -1,5 +1,9 @@
+.car{
+  display: block;
+  left: 0;
+}
 .section {
-  padding: 100px 0;
+  padding: 0 0 100vh ;
 }
 #navbar-full .navbar {
   border-radius: 0 !important;
@@ -7,7 +11,6 @@
   z-index: 2;
 }
 .page-carousel {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -20,5 +23,6 @@
 .img{
   width: 100%;
   max-height: 100vh;
-  margin: auto;
+  margin: 0;
 }
+

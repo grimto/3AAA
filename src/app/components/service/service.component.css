@@ -3,5 +3,9 @@
   background-image: url('../../../assets/img/service.jpg');
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   margin-top: 0;
+}
+#taille{
+
 }
