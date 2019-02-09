@@ -12,6 +12,12 @@ import { ProposComponent } from './components/propos/propos.component';
 import { ServiceComponent } from './components/service/service.component';
 import { FaitsComponent } from './components/faits/faits.component';
 import { PortefeuilleComponent } from './components/portefeuille/portefeuille.component';
+import { ClientsComponent } from './components/clients/clients.component';
+import { TemoignageComponent } from './components/temoignage/temoignage.component';
+import { EquipeComponent } from './components/equipe/equipe.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +27,12 @@ import { PortefeuilleComponent } from './components/portefeuille/portefeuille.co
     ProposComponent,
     ServiceComponent,
     FaitsComponent,
-    PortefeuilleComponent
+    PortefeuilleComponent,
+    ClientsComponent,
+    TemoignageComponent,
+    EquipeComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     AlertModule.forRoot(),

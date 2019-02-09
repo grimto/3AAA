@@ -2,31 +2,42 @@
   <div class="page-header section-dark">
     <div class="section">
       <div class="page-carousel">
-        <ngb-carousel>
+        <ngb-carousel [showNavigationIndicators]="showNavigationIndicators">
           <ng-template ngbSlide>
             <div>
               <img class="img" src="../../../assets/img/intro-carousel/1.jpg" alt="">
-              <div class="carousel-caption">
-                <h2></h2>
-                <p>Somewhere</p>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>Plus de 40 ans au service</h2>
+                  <p>Nous continuons, à ce jour, à être au coeur du developpement, de l'urbanisation et de la
+                    modernité.</p>
+                  <a class="btn-get-started" href="#">Commencer</a>
+                </div>
               </div>
             </div>
           </ng-template>
           <ng-template ngbSlide>
             <div>
               <img class="img" src="../../../assets/img/intro-carousel/2.jpg" alt="">
-              <div class="carousel-caption">
-                <h2></h2>
-                <p>Somewhere else</p>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>En 2014 , nous avons grandit vite</h2>
+                  <p>Groupe 3A a vu le jour en 2014 en prenant comme valeur la satisfaction de ses
+                    clients en leurs offrant des services adapté à leur besoin et ceux dans differents domaineś.</p>
+                  <a class="btn-get-started" href="#">Commencer</a>
+                </div>
               </div>
             </div>
           </ng-template>
           <ng-template ngbSlide>
             <div>
               <img class="img" src="../../../assets/img/intro-carousel/3.jpg" alt="">
-              <div class="carousel-caption">
-                <h2></h2>
-                <p>Here it is</p>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>Nous sommes professionnels</h2>
+                  <p>La société 3A Service s'occupe de vous faciliter tout les aspets de votre exploitation.</p>
+                  <a class="btn-get-started" href="#">Commencer</a>
+                </div>
               </div>
             </div>
           </ng-template>
