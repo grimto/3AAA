@@ -1,9 +1,9 @@
 .back-propos {
-  background-image: url('../../../assets/img/about-bg.jpg');
+  background-image: url('../../../assets/img/about_bg.png');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 0;
+  padding : 30px 0 30px;
 }
 .card {
   box-sizing: border-box;
@@ -11,4 +11,7 @@
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
+}
+#propos{
+
 }

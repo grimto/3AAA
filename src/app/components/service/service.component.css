@@ -1,10 +1,9 @@
 .back-service {
-  background-attachment: scroll;
-  background-image: url('../../../assets/img/service.jpg');
+  background-image: url('../../../assets/img/service.png');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 0;
+  padding : 30px 0 30px;
 }
 #taille{
 
