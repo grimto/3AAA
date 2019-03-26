@@ -1,5 +1,7 @@
 import {Component, OnInit, ElementRef} from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import {$} from 'protractor';
+import {style} from '@angular/animations';
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -8,13 +10,18 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 export class NavBarComponent implements OnInit {
   private toggleButton: any;
   private sidebarVisible: boolean;
+  private navbarcolor = "black" ;
   constructor(public location: Location, private element: ElementRef) {
     this.sidebarVisible = false;
   }
   ngOnInit() {
     const navbar: HTMLElement = this.element.nativeElement;
     this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+  }
 
+
+  navbarColorChange(){
+     return  window.scrollY >10 ? this.navbarcolor : 'none';
   }
   sidebarOpen() {
     const toggleButton = this.toggleButton;
@@ -47,11 +54,6 @@ export class NavBarComponent implements OnInit {
   }
   isHome() {
     var titlee = this.location.prepareExternalUrl(this.location.path());
-
-    if ( titlee === '/home' ) {
-      return true;
-    } else {
-      return false;
-    }
+    return (titlee === '/home');
   }
 }

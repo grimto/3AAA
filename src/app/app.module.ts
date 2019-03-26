@@ -17,6 +17,10 @@ import { TemoignageComponent } from './components/temoignage/temoignage.componen
 import { EquipeComponent } from './components/equipe/equipe.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { MatDialogModule} from '@angular/material/dialog';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -32,15 +36,24 @@ import { FooterComponent } from './components/footer/footer.component';
     TemoignageComponent,
     EquipeComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    DialogComponent,
   ],
   imports: [
     AlertModule.forRoot(),
     NgbModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
-  providers: [Location],
+  entryComponents: [
+    PortefeuilleComponent,
+    DialogComponent,
+  ],
+  providers: [
+    Location,
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

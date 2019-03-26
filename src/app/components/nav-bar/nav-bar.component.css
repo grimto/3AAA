@@ -6,9 +6,18 @@
 }
 .navbar-brand{
   color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0;
+  padding-left: 60px;
+  line-height: 1;
 }
 #navbarToggler{
-  background-color: #0b1011;
+  background-color: transparent;
+  height: 72px;
+  padding: 20px 0;
 }
 nav.scroll {
   background-color: #0b1011;
@@ -18,4 +27,8 @@ nav.scroll {
 }
 .nav-link:hover {
   color: #18d26e;
+}
+.nav-item{
+  float: right;
+  margin: 0;
 }
