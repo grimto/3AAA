@@ -9,12 +9,13 @@ import {DialogComponent} from '../dialog/dialog.component';
 })
 export class PortefeuilleComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) {
+  constructor(private dialog: MatDialog) {
   }
 
   openDialog() : void {
     const dialogRef = this.dialog.open(DialogComponent, {
-      width : '80%',
+      width : '600px',
+      height: '400px',
       data: {
         titre: 'first',
         capt: ' lorem ipsulm and shit ....',
@@ -28,6 +29,5 @@ export class PortefeuilleComponent implements OnInit {
 
   ngOnInit() {
   }
-
 
 }
