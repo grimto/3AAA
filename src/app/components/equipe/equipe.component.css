@@ -1,0 +1,43 @@
+.img-equip{
+  width: 350px;
+  height: 350px;
+  border: 7px solid #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.equipe {
+  width: 350px;
+  height: 350px;
+}
+
+#equipe{
+  background-color: white;
+  padding: 0 0 30px;
+}
+.overlay {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.equip:hover .overlay {
+  opacity: 0.75;
+}
+.text{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

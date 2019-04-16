@@ -1,0 +1,48 @@
+.header{
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+.header-p{
+  text-align: center;
+  padding-bottom: 30px;
+  color: #333;
+}
+#contact{
+  text-align: center;
+  padding: 60px 0 30px;
+  background-color: white;
+
+}
+.contact-phone{
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin-bottom: 20px ;
+  padding: 20px 0;
+}
+.contact-address{
+  margin-bottom: 20px ;
+  padding: 20px 0;
+}
+.contact-mail{
+  margin-bottom: 20px ;
+  padding: 20px 0;
+}
+a{
+  color: #999999;
+}
+a:hover{
+ color: #18d26e;
+}
+#button{
+  background: #18d26e;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
