@@ -7,7 +7,7 @@
 
     <div class="row">
       <div class="col-md-4 col-sm-6 portfolio">
-        <div (click)="openDialog()" class="portfolio-link" data-toggle="modal">
+        <div (click)="openDialog( 'threads' )" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-item">
             <div class="portfolio-hover">
               <div class="text">
@@ -20,11 +20,12 @@
       </div>
 
       <div class="col-md-4 col-sm-6 portfolio">
-        <div (click)="openDialog()" >
+        <div (click)="openDialog('explore')" class="portfolio-link">
           <div class="portfolio-item">
             <img src="../../../assets/img/portfolio/02-thumbnail.jpg" class="image" style="width:100%">
             <div class="portfolio-hover">
-              <div class="text"><h4>Explore</h4>
+              <div class="text">
+                <h4>Explore</h4>
                 <p>Graphic Design</p></div>
             </div>
           </div>
@@ -32,11 +33,12 @@
       </div>
 
       <div class="col-md-4 col-sm-6 portfolio">
-        <div (click)="openDialog()">
+        <div (click)="openDialog('finish')" class="portfolio-link">
           <div class="portfolio-item">
             <img src="../../../assets/img/portfolio/03-thumbnail.jpg" class="image" style="width:100%">
             <div class="portfolio-hover">
-              <div class="text"><h4>Finish</h4>
+              <div class="text">
+                <h4>Finish</h4>
                 <p>Identity</p></div>
             </div>
           </div>
@@ -44,11 +46,12 @@
       </div>
 
       <div class="col-md-4 col-sm-6 portfolio">
-        <div (click)="openDialog()">
+        <div (click)="openDialog('lines')" class="portfolio-link">
           <div class="portfolio-item">
             <img src="../../../assets/img/portfolio/04-thumbnail.jpg" class="image" style="width:100%">
             <div class="portfolio-hover">
-              <div class="text"><h4>Lines</h4>
+              <div class="text">
+                <h4>Lines</h4>
                 <p>Branding</p></div>
             </div>
           </div>
@@ -56,7 +59,7 @@
       </div>
 
       <div class="col-md-4 col-sm-6 portfolio">
-        <div (click)="openDialog()">
+        <div (click)="openDialog('southwest')" class="portfolio-link">
           <div class="portfolio-item">
             <img src="../../../assets/img/portfolio/05-thumbnail.jpg" class="image" style="width:100%">
             <div class="portfolio-hover">
@@ -70,7 +73,7 @@
       </div>
 
       <div class="col-md-4 col-sm-6 portfolio">
-        <div (click)="openDialog()">
+        <div (click)="openDialog('window')" class="portfolio-link">
           <div class="portfolio-item">
             <img src="../../../assets/img/portfolio/06-thumbnail.jpg" class="image" style="width:100%">
             <div class="portfolio-hover">
