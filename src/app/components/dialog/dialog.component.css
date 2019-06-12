@@ -1,4 +1,13 @@
-.dialog{
-  margin: 1rem;
-  max-width: 100vw;
+.dialog {
+  text-align: center;
+  overflow: auto;
 }
+
+#content {
+  height: 100%;
+}
+
+#images {
+  display: block;
+}
+

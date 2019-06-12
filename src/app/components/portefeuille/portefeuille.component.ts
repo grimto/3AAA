@@ -17,76 +17,16 @@ export class PortefeuilleComponent implements OnInit {
   arrayElem;
 
   openDialog(x: string): void {
-    console.log(this.arrayElem[0].ID);
     let i: number;
     for (i = 0; i <= this.arrayElem.length; i++) {
       if (x === this.arrayElem[i].ID) {
         const dialogRef = this.dialog.open(DialogComponent, {
+          width: '95%',
+          maxWidth: '100%',
           data: this.arrayElem[i]
         });
       }
     }
-    /* if (x === 'threads') {
-       const dialogRef = this.dialog.open(DialogComponent, {
-         data: {
-           ImagesLink: [
-             '../../../assets/img/3a/batiments.png',
-             '../../../assets/img/3a/batiments.png'
-           ],
-           titre: 'first',
-           capt: ' lorem ipsulm ....',
-           par: 'exorcisamuste omnis imundus,',
-         }
-       });
-     } else if (x === '') {
-       const dialogRef = this.dialog.open(DialogComponent, {
-         data: {
-           titre: 'Second',
-           capt: ' lorem ipsulm psummmmpsumm....',
-           par: 'exorcisamuste omnis imundus,',
-         }
-       });
-     } else if (x === '') {
-       const dialogRef = this.dialog.open(DialogComponent, {
-         width: '600px',
-         height: '400px',
-         data: {
-           titre: 'Second',
-           capt: ' lorem ipsulm psummmmpsumm....',
-           par: 'exorcisamuste omnis imundus,',
-         }
-       });
-     } else if (x === '') {
-       const dialogRef = this.dialog.open(DialogComponent, {
-         width: '600px',
-         height: '400px',
-         data: {
-           titre: 'Second',
-           capt: ' lorem ipsulm psummmmpsumm....',
-           par: 'exorcisamuste omnis imundus,',
-         }
-       });
-     } else if (x === '') {
-       const dialogRef = this.dialog.open(DialogComponent, {
-         width: '600px',
-         height: '400px',
-         data: {
-           titre: 'Second',
-           capt: ' lorem ipsulm psummmmpsumm....',
-           par: 'exorcisamuste omnis imundus,',
-         }
-       });
-     } else if (x === '') {
-       const dialogRef = this.dialog.open(DialogComponent, {
-         width: '600px',
-         height: '400px',
-         data: {
-           titre: 'Second',
-           capt: ' lorem ipsulm psummmmpsumm....',
-           par: 'exorcisamuste omnis imundus,',
-         }
-       });
-     }*/
   }
 
   ngOnInit() {

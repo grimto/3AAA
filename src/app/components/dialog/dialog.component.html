@@ -1,19 +1,21 @@
-<div class="dialog modal-dialog">
-  <div class="modal-content">
-    <mat-dialog-content class="mat-typography container">
+<div class="dialog mx-auto">
+  <div id="content">
+    <mat-dialog-content class="">
       <div id="title">
         <h2 class="text-uppercase">{{data.titre}}</h2>
       </div>
-      <div id="images" class="col-md-4 col-sm-6 row">
+      <div class="row mx-auto" >
         <div *ngFor="let image of data.ImagesLink">
-          <img [src]="image" class="image">
+          <div  class="col-md-4 col-sm-6" id="images">
+            <img [src]="image" class="image">
+          </div>
         </div>
       </div>
       <div id="caption">
         <p>{{data.capt}}</p>
         Asfazjd jkqfmdkdjqlm
       </div>
-      <div id="content">
+      <div id="paragraph">
         <p>{{data.par}}</p>
       </div>
     </mat-dialog-content>
