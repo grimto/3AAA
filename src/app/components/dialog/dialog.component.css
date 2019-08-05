@@ -1,6 +1,5 @@
 .dialog {
   text-align: center;
-  overflow: auto;
 }
 
 #content {
@@ -9,5 +8,7 @@
 
 #images {
   display: block;
+  margin: auto;
+  width: 50%;
 }
 

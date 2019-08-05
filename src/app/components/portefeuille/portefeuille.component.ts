@@ -3,6 +3,8 @@ import {MatDialog, MatDialogRef} from '@angular/material';
 
 import {DialogComponent} from '../dialog/dialog.component';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
+import {Overlay} from '@angular/cdk/overlay';
+
 
 @Component({
   selector: 'app-portefeuille',
@@ -11,10 +13,12 @@ import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 })
 export class PortefeuilleComponent implements OnInit {
   constructor(private dialog: MatDialog,
-              private httpService: HttpClient) {
+              private httpService: HttpClient,
+              private overlay: Overlay) {
   }
 
   arrayElem;
+
 
   openDialog(x: string): void {
     let i: number;
