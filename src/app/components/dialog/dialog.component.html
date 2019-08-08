@@ -4,13 +4,9 @@
       <div id="title">
         <h2 class="text-uppercase">{{data.titre}}</h2>
       </div>
-      <div class="row">
-        <div id="images">
-          <div *ngFor="let image of data.ImagesLink">
-            <div>
-              <img [src]="image" class="image">
-            </div>
-          </div>
+      <div id="images" class="row">
+        <div *ngFor="let image of data.ImagesLink"  class=" col-md-3 col-sm-6 mx-auto card" >
+          <img [src]="image">
         </div>
       </div>
       <div id="caption">
