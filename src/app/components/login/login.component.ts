@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators, ReactiveFormsModule} from '@angular/forms';
 import {first} from 'rxjs/operators';
-import { AlertService, AuthenticationService } from '../../material';
+import {AlertService, AuthenticationService} from '../../material';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -22,6 +23,10 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
+    /* this.loginForm = new FormGroup({
+       username: new FormControl(['', Validators.required]),
+       password: new FormControl(['', Validators.required])
+     });*/
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
