@@ -12,18 +12,25 @@ import {Overlay} from '@angular/cdk/overlay';
   styleUrls: ['./portefeuille.component.css']
 })
 export class PortefeuilleComponent implements OnInit {
+  uri = 'http://localhost:4000/objectss';
+
   constructor(private dialog: MatDialog,
-              private httpService: HttpClient,
-              private overlay: Overlay) {
+              private httpService: HttpClient) {
   }
 
   arrayElem;
 
+  UpdateObject(title, paragraph, images) {
+  }
+
+  getObject(titre) {
+    return this.httpService.get(`${this.uri + '/titre/' + titre}`);
+  }
 
   openDialog(x: string): void {
     let i: number;
     for (i = 0; i <= this.arrayElem.length; i++) {
-      if (x === this.arrayElem[i].ID) {
+      if (x === this.arrayElem[i]._titre) {
         const dialogRef = this.dialog.open(DialogComponent, {
           width: '95%',
           maxWidth: '100%',
@@ -34,7 +41,7 @@ export class PortefeuilleComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.httpService.get('../assets/first.json').subscribe(
+    this.httpService.get(`${this.uri}`).subscribe(
       data => {
         this.arrayElem = data as string [];	 // FILL THE ARRAY WITH DATA.
       },
